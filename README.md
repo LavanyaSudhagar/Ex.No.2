@@ -1,36 +1,49 @@
+# EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
 
-# Ex.No: 2 	Evaluation of 2024 Prompting Tools Across Diverse AI Platforms: ChatGPT, Claude, Bard, Cohere Command, and Meta 
-### DATE:                                                                            
-### REGISTER NUMBER : 
- 
-### Aim:
-To compare the performance, user experience, and response quality of different AI platforms (ChatGPT, Claude, Bard, Cohere Command, and Meta) within a specific use case, such as summarizing text or answering technical questions. Generate a Prompt based output using different Prompting tools of 2024.
-### AI Tools required:
+## AIM
+To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
 
-### Explanation:
-Define the Use Case:
-Select a specific task for evaluation across platforms (e.g., summarizing a document, answering a technical question, or generating a creative story / Code).
-Ensure the use case is applicable to all platforms and will allow for comparison across response quality, accuracy, and depth.
-Create a Set of Prompts:
-Prepare a uniform set of prompts that align with the chosen use case.
-Each prompt should be clear and precise, ensuring that all platforms are evaluated using the same input.
-Consider multiple prompts to capture the versatility of each platform in handling different aspects of the use case.
-Run the Experiment on Each AI Platform:
-Input the prompts into each AI tool (ChatGPT, Claude, Bard, Cohere Command, and Meta) and gather the responses.
-Ensure the same conditions are applied for each platform, such as input format, time to respond, and prompt delivery.
-Record response times, ease of interaction with the platform, and any technical issues encountered.
-Evaluate Response Quality:
-Assess each platform’s responses using the following criteria: Accuracy,Clarity,Depth,Relevance 
-Compare Performance:
-Compare the collected data to identify differences in performance across platforms.
-Identify any platform-specific advantages, such as faster response times, more accurate answers, or more intuitive interfaces.
-Deliverables:
-A comparison table outlining the performance of each platform (ChatGPT, Claude, Bard, Cohere Command, and Meta) based on accuracy, clarity, depth, and relevance of responses.
-A final report summarizing the findings of the experiment, including recommendations on the most suitable AI platform for different use cases based on performance and user 
+## SCENARIO
+You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
 
-### Output:
+## ALGORITHM
+### 1. Article Selection: 
+Use a 500-word article explaining blockchain basics in a technical tone.
 
-### Conclusion: 
+### 2. Prompt Design:
 
+* Zero-shot: A direct instruction like “Summarize the following text in simple terms for undergraduate students.”
 
-# Result : The Prompt for the above problem statement executed successfully.
+* Few-shot: Provide two or three example summaries of similar articles before asking the model to generate a new one.
+
+* Chain-of-thought: Instruct the AI to reason through key ideas step-by-step before composing a summary.
+
+* Role-based: Ask the AI to take on a persona (e.g., a professor) and explain the article to beginners.
+
+### 3. Execution:
+Input each prompt variant into ChatGPT, Gemini, Claude, and Copilot. Measure:
+
+* Accuracy of content
+
+* Coherence and flow
+
+* Simplicity of language
+
+* Speed of response
+
+* User experience with the interface
+
+### 4. Evaluation: 
+Manually assess each output using a 1–5 scale for each of the five criteria. Averages help identify the best-performing combinations.
+
+### 5. Comparison and Ranking:
+Review overall performance across all combinations to determine the most effective platform + prompt strategy.
+
+## RESULT
+* The results showed that Claude combined with Chain-of-Thought prompting delivered the most effective summaries. This combination excelled in accuracy, logical flow, and maintaining clarity, especially when simplifying technical terms. While slightly slower than zero-shot methods, the quality trade-off was worth it.
+
+* ChatGPT with zero-shot prompting was the fastest, producing quick summaries that were generally accurate and simple, though sometimes lacked depth.
+
+* Gemini with few-shot prompting provided solid results, especially when the examples were well-chosen. However, performance depended heavily on the quality and relevance of the examples provided.
+
+* Copilot using role-based prompting was easy to work with and produced relatable summaries, but occasionally lost technical accuracy due to over-simplification.
